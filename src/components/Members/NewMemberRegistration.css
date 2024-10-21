@@ -1,0 +1,214 @@
+.registration-container {
+  max-width: 1200px; /* Max width for registration form */
+  margin: 2% auto; /* Center the form with top/bottom margin */
+  padding: 40px;
+  background-color: white; /* Light background */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.registration-form {
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+}
+
+.form-blocks {
+  display: flex;
+  flex-wrap: wrap; /* Allow blocks to wrap on smaller screens */
+  justify-content: space-between; /* Space between blocks */
+  margin-bottom: 20px; /* Spacing below form blocks */
+}
+
+.form-block {
+  flex: 1;
+  min-width: 250px; /* Minimum width for blocks */
+  max-width: 400px; /* Limit maximum width of blocks */
+  margin: 10px; /* Margin between blocks */
+  padding: 20px; /* Padding within blocks */
+  background-color: #fff; /* White background */
+  border: 1px solid #ddd; /* Light border for separation */
+  border-radius: 5px; /* Rounded corners */
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05); /* Soft shadow for depth */
+}
+
+.form-block h3 {
+  text-align: left;
+  margin-bottom: 15px; /* Space below the header */
+  color: #444; /* Darker header color */
+}
+
+.h2name {
+  margin: 0 0 1%; /* Margin adjustments */
+}
+
+.form-group {
+  margin-bottom: 20px; /* Space between form groups */
+}
+
+label {
+  display: block; /* Labels on their own line */
+  font-weight: bold; /* Bold labels */
+  margin-bottom: 8px; /* Space below labels */
+}
+
+input[type="text"],
+input[type="number"],
+input[type="date"],
+input[type="file"],
+select,
+textarea {
+  width: 100%; /* Full width for inputs */
+  padding: 12px; /* Padding for better readability */
+  border: 1px solid #ccc; /* Input border */
+  border-radius: 5px; /* Rounded input corners */
+  font-size: 14px; /* Input font size */
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1); /* Subtle inner shadow */
+  margin: 2% 0; /* Space above and below inputs */
+  transition: border-color 0.3s ease; /* Smooth transition for border color */
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: #66afe9; /* Border color on focus */
+  outline: none; /* Remove default outline */
+}
+
+.submit-button {
+  display: flex;
+  justify-content: center; /* Center submit button */
+  margin-top: 20px; /* Add margin for separation */
+}
+
+button[type="submit"],
+.otp-btn-verify,
+.extend-btn,
+.schedule-btn,
+.send-btn,
+.cancel-button {
+  padding: 12px 30px; /* Larger padding for button */
+  background-color: #007bff; /* Primary color */
+  color: #fff; /* White text */
+  border: none; /* Remove border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  font-size: 16px; /* Button font size */
+  transition: background-color 0.3s ease; /* Smooth transition on hover */
+  margin: 1% 1% 0 0; /* Space above and right */
+}
+
+button[type="submit"]:hover,
+.otp-btn-verify:hover,
+.extend-btn:hover,
+.otp-btn:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+.otp-btn {
+  background-color: #28a745; /* Green background color */
+}
+
+.otp-btn:hover {
+  background-color: #218838; /* Darker green on hover */
+}
+
+.otp-btn:active {
+  background-color: #1e7e34; /* Even darker green when pressed */
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.3); /* Inset shadow when pressed */
+}
+
+.otp-btn:focus {
+  outline: none; /* Remove default focus outline */
+  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.5); /* Focus outline with blue color */
+}
+
+.photo-preview {
+  max-width: 100%; /* Ensure photo doesn't overflow */
+  margin-top: 10px; /* Space above the preview */
+}
+
+.input-container {
+  display: flex; /* Flex container for input and currency symbol */
+  align-items: center; /* Center vertically */
+}
+
+.currency-symbol {
+  margin-right: 10px; /* Space between symbol and input */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .form-blocks {
+    flex-direction: column; /* Stack form blocks vertically on small screens */
+  }
+
+  .form-block {
+    margin: 10px 0; /* Adjust margin for vertical stacking */
+  }
+}
+
+@media (max-width: 1024px) { /* Tablet and smaller devices */
+  .form-block {
+    flex: 1 1 45%; /* Take up 45% of the width */
+    margin: 5px; /* Reduced margin for tighter layout */
+  }
+}
+
+@media (max-width: 480px) { /* Smartphones */
+  .form-block {
+    flex: 1 1 100%; /* Full width on mobile */
+    margin: 5px 0; /* Top/bottom margin for mobile */
+  }
+
+  .photo-preview {
+    max-width: 90%; /* Limit photo preview size on mobile */
+  }
+}
+
+.small-input {
+  width: 120px; /* Set the width to your preference */
+  padding: 8px; /* Add some padding for comfort */
+  font-size: 14px; /* Set font size */
+  border: 1px solid #ccc; /* Light border */
+  border-radius: 20px; /* Slightly rounded corners */
+  transition: border-color 0.3s ease; /* Smooth transition for border color */
+}
+
+.small-input:focus {
+  border-color: #007bff; /* Change border color on focus */
+  outline: none; /* Remove default outline */
+}
+
+.small-input::placeholder {
+  color: #999; /* Placeholder text color */
+  opacity: 1; /* Ensure full opacity */
+}
+.schedule-button {
+  background-color: #007BFF; /* Blue background color */
+  color: white; /* White text color */
+  padding: 10px 20px; /* Vertical and horizontal padding */
+  border: none; /* No border */
+  border-radius: 5px; /* Rounded corners */
+  font-size: 16px; /* Font size */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transition */
+}
+
+/* Hover effect */
+.schedule-button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+  transform: translateY(-2px); /* Slight lift effect */
+}
+
+/* Focus effect */
+.schedule-button:focus {
+  outline: none; /* Remove default focus outline */
+  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.5); /* Add a focus ring */
+}
+
+/* Disabled state */
+.schedule-button:disabled {
+  background-color: #6c757d; /* Grey background for disabled state */
+  cursor: not-allowed; /* Not-allowed cursor */
+}
+

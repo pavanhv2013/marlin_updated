@@ -1,0 +1,182 @@
+
+body {
+    font-family: 'Roboto', sans-serif; /* Modern font */
+    background: linear-gradient(to right, #f8f9fa, #e9ecef); /* Subtle gradient background */
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    align-items: center;
+  }
+  
+  /* Guest Registration Form */
+  .guest-registration-form {
+    max-width: 800px; /* Increased form width for a more spacious layout */
+    margin: 50px auto; /* Center form */
+    background: #ffffff; /* White background for the form */
+    padding: 20px; /* Increased padding for a roomy feel */
+    border-radius: 5px; /* More rounded corners */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Deeper shadow for depth */
+    transition: transform 0.2s ease; /* Animation for hover effect */
+    margin-top: 0%;
+
+  }
+  
+  /* Header Style */
+  .guest-registration-form h2 {
+    text-align: center; /* Center title */
+    color: #333; /* Dark text color */
+    margin-bottom: 25px; /* Space below the title */
+    font-size: 24px; /* Increased font size for the header */
+  }
+  
+  /* Form Group Styles */
+  .guest-form-group {
+    margin-bottom: 20px; /* Space between form groups */
+  }
+  
+  /* Label Styles */
+  .guest-form-group label {
+    display: block; /* Block label */
+    margin-bottom: 5px; /* Space below label */
+    font-weight: 600; /* Bold text */
+    color: #555; /* Slightly lighter color */
+  }
+  
+  /* Input and Select Styles */
+  .guest-form-group input[type="text"],
+  .guest-form-group input[type="tel"],
+  .guest-form-group input[type="number"],
+  .guest-form-group select {
+    width: 100%; /* Full width inputs */
+    padding: 12px; /* Increased padding */
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 6px; /* Rounded corners */
+    box-sizing: border-box; /* Include padding in width */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+  }
+  
+  /* Focus Styles */
+  .guest-form-group input:focus,
+  .guest-form-group select:focus {
+    border-color: #007bff; /* Change border color on focus */
+    outline: none; /* Remove default outline */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Subtle shadow on focus */
+  }
+  
+
+  /* Button Hover Styles */
+  .guest-form-group button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+    transform: translateY(-2px); /* Lift effect on hover */
+  }
+  
+  /* Disable Button Styles */
+  .guest-form-group button:disabled {
+    background-color: #ccc; /* Light gray for disabled buttons */
+    cursor: not-allowed; /* Not allowed cursor */
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 600px) {
+    .guest-registration-form {
+      padding: 20px; /* Adjust padding on small screens */
+    }
+  
+    .guest-form-group button {
+      width: 100%; /* Full width buttons */
+      margin-right: 0; /* Remove right margin */
+      margin-bottom: 10px; /* Space between buttons */
+    }
+  }
+  
+  /* Form Hover Effect */
+  .guest-registration-form:hover {
+    transform: scale(1.02); /* Slightly increase size on hover */
+  }
+  
+    
+    /* Header Style */
+    .guest-registration-form h2 {
+      text-align: center; /* Center title */
+      color: #333; /* Dark text color */
+      margin-bottom: 25px; /* Space below the title */
+      font-size: 24px; /* Increased font size for the header */
+    }
+    
+    /* Form Group Styles */
+    .guest-form-group {
+      margin-bottom: 20px; /* Space between form groups */
+    }
+    
+    /* Label Styles */
+    .guest-form-group label {
+      display: block; /* Block label */
+      margin-bottom: 5px; /* Space below label */
+      font-weight: 600; /* Bold text */
+      color: #555; /* Slightly lighter color */
+    }
+    
+    /* Input and Select Styles */
+    .guest-form-group input[type="text"],
+    .guest-form-group input[type="tel"],
+    .guest-form-group input[type="number"],
+    .guest-form-group select {
+      width: 100%; /* Full width inputs */
+      padding: 12px; /* Increased padding */
+      border: 1px solid #ccc; /* Light border */
+      border-radius: 6px; /* Rounded corners */
+      box-sizing: border-box; /* Include padding in width */
+      transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+    }
+    
+    /* Focus Styles */
+    .guest-form-group input:focus,
+    .guest-form-group select:focus {
+      border-color: #007bff; /* Change border color on focus */
+      outline: none; /* Remove default outline */
+      box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Subtle shadow on focus */
+    }
+    
+    /* Button Styles */
+    .guest-form-group button {
+      background-color: #007bff; /* Primary button color */
+      color: #fff; /* White text */
+      border: none; /* No border */
+      border-radius: 5px; /* Rounded corners with 20px radius */
+      padding: 12px 20px; /* Increased padding for buttons */
+      cursor: pointer; /* Pointer on hover */
+      margin-top: 10px; /* Space between buttons */
+      transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transition */
+      font-size: 16px; /* Larger font size */
+    }
+    
+    /* Button Hover Styles */
+    .guest-form-group button:hover {
+      background-color: #0056b3; /* Darker shade on hover */
+      transform: translateY(-2px); /* Lift effect on hover */
+    }
+    
+    /* Disable Button Styles */
+    .guest-form-group button:disabled {
+      background-color: #ccc; /* Light gray for disabled buttons */
+      cursor: not-allowed; /* Not allowed cursor */
+    }
+    
+    /* Responsive Adjustments */
+    @media (max-width: 600px) {
+      .guest-registration-form {
+        padding: 20px; /* Adjust padding on small screens */
+      }
+    
+      .guest-form-group button {
+        width: 100%; /* Full width buttons */
+        margin-right: 0; /* Remove right margin */
+        margin-bottom: 10px; /* Space between buttons */
+      }
+    }
+    
+    /* Form Hover Effect */
+    .guest-registration-form:hover {
+      transform: scale(1.02); /* Slightly increase size on hover */
+    }
+    

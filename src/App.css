@@ -1,0 +1,255 @@
+/* General Layout */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+/* Header */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: #1c80cf; /* Example background color */
+  color: white; /* Example text color */
+  position: sticky;
+  height: 80px;
+  border: 2px solid #fff;
+  box-shadow: 0 0 px rgba(0, 0, 0, 0.9);
+}
+
+.header-title {
+  flex-grow: 1; /* Allow the title to take available space */
+  text-align: center; /* Center text */
+}
+
+.header-text {
+  margin: 0; /* Remove default margin */
+  font-size: 24px; /* Adjust font size */
+  font-weight: bold; /* Make it bold */
+}
+
+.fonty {
+  font-family: 'Georgia', serif; /* Keep existing font-family */
+  color: #fff; /* Keep text color white */
+  font-weight: 700; /* Keep font weight */
+  text-align: center; /* Center the text */
+  margin: 30px 0; /* Space above and below */
+  padding: 15px; /* Padding inside for spacing */
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;  /* Centers the content horizontally */
+  align-items: center;      /* Centers the content vertically */
+  height: 100vh;            /* Optional: If you want to center within the full viewport height */
+}
+
+
+.company-logo {
+  width: 125px;  /* Fixed width for the logo */
+  height: auto;  /* Height adjusts automatically to maintain aspect ratio */
+  max-width: 100%;  /* Ensures logo doesn't exceed container width */
+  max-height: 100%; /* Ensures logo doesn't exceed container height */
+  transition: box-shadow 0.2s;
+}
+
+
+/* Profile Photo */
+.profile-photo {
+  width: 40px; /* Adjust profile photo size */
+  height: 40px;
+  border-radius: 50%; /* Make it circular */
+}
+
+/* Main Content Area */
+.main-content {
+  display: flex;
+  flex-grow: 1;
+  background-color: #f8f9fa;
+}
+
+/* Footer Styling */
+.footer {
+  display: flex;
+  height: 50px;
+  background-color: #1c80cf;
+  color: #fff;
+  bottom: 0;
+  position: fixed;
+  text-align: center;
+  width: 100%;
+  z-index: 1000;
+  border: 2px solid #fff;
+  font-weight: bold;
+}
+
+/* Sidebar Styling */
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  background-color: #f3f2f1;
+  color: #1c80cf;
+  transition: width 0.3s ease;
+  height: 100%;
+  background: #0046c8;
+}
+
+.sidebar.expanded {
+  width: 220px;
+  background-color: #1c80cf;
+}
+
+.sidebar.collapsed {
+  width: 50px;
+  background-color: #1c80cf;
+}
+
+.toggle-button {
+  margin: 10px;
+  background-color: #1c80cf;
+  border: none;
+}
+
+.toggle-button:hover {
+  background-color: #0046c8;
+}
+
+/* Panel Menu Header */
+.p-panelmenu .p-panelmenu-header .p-panelmenu-header-content {
+  border: 1px solid #dee2e6;
+  color: #495057;
+  background: #1c80cf;
+  border-radius: 3px;
+  transition: box-shadow 0.2s;
+}
+
+.p-panelmenu .p-panelmenu-header .p-panelmenu-header-content .p-panelmenu-header-link {
+  color: #ffffff;
+  padding: 1rem;
+  font-weight: 600;
+}
+
+/* Content Area Styling */
+.content-area {
+  flex-grow: 1;
+  padding: 20px;
+  transition: margin-left 0.3s ease;
+}
+
+/* When the Sidebar is Expanded */
+.content-area.expanded {
+  margin-left: 0px;
+}
+
+/* When the Sidebar is Collapsed */
+.content-area.collapsed {
+  margin-left: 0px;
+}
+
+/* Add Button */
+.addbutton {
+  border-radius: 20px;
+}
+
+/* Form Header Styling */
+.registration-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Form Group Container */
+.form-group {
+  margin-bottom: 15px;
+}
+
+/* Labels in the Form */
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+/* Input, Select, Textarea Fields */
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box; /* Ensure padding and borders are included in the element's total width and height */
+}
+
+/* Custom Table */
+.custom-table .p-column-header,
+.custom-table .p-datatable-tbody td {
+  text-align: center;
+}
+
+.p-datatable .p-datatable-thead > tr > th {
+  text-align: center;
+  padding: 1rem 1rem;
+  border: 1px solid #999494;
+  border-width: 0 0 1px 0;
+  font-weight: 600;
+  color: #1e2023;
+  background: #e6ebef;
+  transition: box-shadow 0.2s;
+}
+
+/* Collapsed Sidebar Button */
+.p-button {
+  margin: 5px;
+  display: inline-flex;
+  cursor: pointer;
+  user-select: none;
+  align-items: center;
+  vertical-align: bottom;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+  color: #ffffff;
+  background: #1c80cf;
+  border: 1px solid #2196f3;
+  font-size: 1rem;
+  transition: background-color 0.2s, color 0.2s, border-color 0.2s, box-shadow 0.2s;
+  border-radius: 3px;
+}
+
+
+.profile-overlay {
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  background-color: white;
+}
+
+.profile-options {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.profile-option {
+  margin-bottom: 0.5rem;
+}
+
+.profile-option:last-child {
+  margin-bottom: 0; /* Remove margin from the last item */
+}
+
+.profile-btn {
+  width: 100%;
+  text-align: left;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  transition: background-color 0.2s ease;
+}
+
+.profile-btn:hover {
+  background-color: #f0f0f0; /* Light grey on hover */
+}
+
+

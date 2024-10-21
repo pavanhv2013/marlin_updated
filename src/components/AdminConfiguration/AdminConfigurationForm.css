@@ -1,0 +1,226 @@
+/* Admin Configuration Form Container */
+.admin-config-form-container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  align-items: center;
+}
+
+/* Navigation Tabs */
+.admin-config-tabs {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 40px;
+
+}
+
+.admin-config-tab {
+  padding: 10px 20px;
+  cursor: pointer;
+  background: #007bff;
+  border: blue;
+  outline: none;
+  font-size: 16px;
+  color: white;
+  border-radius: 4px;
+  
+}
+
+.admin-config-tab.active {
+  font-weight: bold;
+  border-bottom: 2px solid #007bff;
+  box-shadow: 0 2px 5px rgba(0, 123, 255, 0.2); /* Added box shadow for active tab */
+}
+
+/* Form Styles */
+.admin-config-form-column {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0;
+}
+
+.admin-config-form-group {
+  margin-bottom: 15px;
+}
+
+.admin-config-form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #333;
+}
+
+.admin-config-form-group input,
+.admin-config-form-group select {
+  display: block; /* Change to block design */
+  width: 100%; /* Full width */
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 20px; /* Round edges */
+  font-size: 14px;
+  color: #333;
+  transition: border-color 0.3s;
+  margin-top: 5px; /* Margin for spacing */
+}
+
+.admin-config-form-group input:focus,
+.admin-config-form-group select:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* Role Table */
+.admin-config-roles-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.admin-config-roles-table th,
+.admin-config-roles-table td {
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+.admin-config-roles-table th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+.admin-config-roles-table tr:hover {
+  background-color: #f9f9f9; /* Row hover effect */
+}
+
+/* Button Styles */
+.admin-config-add-role-button,
+.admin-config-sms-settings-button {
+  background-color: #1264bd;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 20px;
+  cursor: pointer;
+  float:right;
+  margin-bottom: 15px;
+  transition: background-color 0.3s;
+}
+
+.admin-config-add-role-button:hover,
+.admin-config-sms-settings-button:hover {
+  background-color: #0056b3;
+}
+
+/* Edit/Delete Buttons */
+.admin-config-edit-button,
+.admin-config-delete-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #007bff;
+  font-size: 16px;
+  margin-right: 10px; /* Space between edit and delete buttons */
+}
+
+.admin-config-edit-button:hover,
+.admin-config-delete-button:hover {
+  color: #0056b3;
+}
+
+/* Dialog Styles */
+.admin-config-dialog-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.admin-config-dialog {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+  width: 400px;
+  max-width: 90%;
+}
+
+.admin-config-dialog h3 {
+  margin-bottom: 15px;
+  font-size: 18px;
+  color: #333;
+}
+
+/* Dialog Input Styles */
+.admin-config-dialog label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #333;
+}
+
+.admin-config-dialog select,
+.admin-config-dialog input {
+  display: block;
+  width: 100%; /* Full width */
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-bottom: 15px; /* Space between inputs */
+}
+
+.admin-config-dialog select:focus,
+.admin-config-dialog input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* Button Styles in Dialog */
+.admin-config-save-role-button,
+.admin-config-cancel-button 
+{
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+  width: 100%; /* Full width for buttons */
+  transition: background-color 0.3s;
+}
+
+.admin-config-save-role-button:hover,
+.admin-config-cancel-button:hover {
+  background-color: #0056b3;
+}
+
+.admin-config-cancel-button {
+  background-color: #dc3545;
+}
+
+.admin-config-cancel-button:hover {
+  background-color: #c82333;
+}
+.cancel-buttonn{
+
+  padding: 12px 30px;
+  background-color: #c82333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  margin: 1% 1% 0 0;
+}
+
+
